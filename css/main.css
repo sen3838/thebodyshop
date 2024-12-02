@@ -765,26 +765,6 @@
     gap: 20px;
   }
 
-  /* header ul {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    font-size: 18px;
-    font-family: "Gabarito", sans-serif;
-  }
-  header h1 {
-    width: 70px;
-    height: 70px;
-  }
-  header h1 img {
-    width: 100%;
-    height: 100%;
-  }
-  header .down i {
-    font-size: 13px;
-    margin-left: 10px;
-  } */
-
   header .pc {
     display: none;
   }
@@ -1014,6 +994,7 @@
 
   .con3 > ul > li:nth-child(2) {
     width: 90%;
+
     margin: 0 auto;
   }
   .soap {
@@ -1022,6 +1003,8 @@
     font-family: "Freesentation-9Black";
   }
   .soap > ul {
+    width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1031,25 +1014,35 @@
   .soap > ul > li {
     margin-top: 20px;
   }
-
+  .soap > ul > li:nth-child(1) {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  .soap > ul > li:nth-child(2) {
+    width: 70%;
+  }
   .soap img {
-    width: 110px;
-    height: 110px;
+    width: 100%;
+    height: 100%;
+    display: block;
   }
   .soap h4 {
+    font-size: 15px;
     line-height: 30px;
   }
   .soap p {
-    font-size: 13px;
-    width: 280px;
+    font-size: 8px;
+    width: 100%;
   }
 
   .soap_tag {
     margin-top: 10px;
     display: flex;
     gap: 10px;
-    width: 250px;
-    font-size: 13px;
+    width: 100%;
+
+    font-size: 10px;
     flex-wrap: wrap;
   }
 
@@ -1065,7 +1058,7 @@
     overflow: hidden;
   }
   .con4 h3 {
-    font-size: 25px;
+    font-size: 18px;
     text-align: center;
     margin-bottom: 30px;
     font-family: "Abhaya Libre", serif;
