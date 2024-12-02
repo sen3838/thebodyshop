@@ -1,0 +1,273 @@
+/* 헤더  */
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  box-sizing: border-box;
+  background-color: #eee;
+}
+
+header ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-family: "Gabarito", sans-serif;
+}
+header h1 {
+  width: 70px;
+  height: 70px;
+}
+header h1 img {
+  width: 100%;
+  height: 100%;
+}
+header .down i {
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+/* 비쥬얼 */
+.visual {
+  width: 100%;
+  height: 100vh;
+}
+.visual .wrap {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+.visual h2 {
+  font-size: 80px;
+  font-family: "Abhaya Libre", serif;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 30px;
+}
+.visual a {
+  width: 85%;
+  height: 70%;
+  display: block;
+  margin: 0 auto;
+}
+.visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* con1 */
+.con1 {
+  width: 100%;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+.con1 h3 {
+  font-size: 45px;
+  font-family: "Abhaya Libre", serif;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+.con1 ul {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.con1 ul li {
+  width: calc(100% / 3 - 10px);
+}
+.con1 ul img {
+  width: 100%;
+}
+.con1 ul p {
+  font-family: "Freesentation-9Black";
+  transform: translate(30px, -55px);
+}
+/* con2 */
+.con2 {
+  width: 100%;
+  padding: 50px 0px;
+}
+.con2 h3 {
+  width: 650px;
+  font-size: 30px;
+  font-family: "Abhaya Libre", serif;
+  font-weight: 300;
+  margin: 0 auto;
+}
+.con2 .bg_y {
+  background-color: #fceea3;
+}
+.con2 .bg_r {
+  color: #ff684f;
+}
+.con2 .tit_left {
+  display: block;
+  margin-left: 150px;
+}
+.con2 ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.con2 .c1 .txt {
+  padding: 100px;
+  box-sizing: border-box;
+  font-family: "Freesentation-9Black";
+}
+
+.con2 .txt span {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 100px 0px 20px;
+  display: block;
+}
+
+.con2 .txt h4 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.con2 .txt p {
+  line-height: 25px;
+  margin-bottom: 50px;
+}
+
+.con2 .txt_image {
+  width: 65%;
+  height: 500px;
+}
+
+.con2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.con2 div {
+  width: 100px;
+  text-align: center;
+  padding: 13px 10px;
+  display: block;
+  color: #fff;
+  background-color: #333;
+}
+
+.con2 .c2 .txt {
+  padding: 100px;
+  margin-right: 150px;
+  box-sizing: border-box;
+  font-family: "Freesentation-9Black";
+}
+/* con3 */
+.con3 {
+  width: 100%;
+  padding: 100px 0px;
+}
+.con3 > ul {
+  display: flex;
+  justify-content: center;
+}
+.con3 > ul > li {
+  width: calc(100% / 2);
+}
+
+.texture {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 150px;
+}
+
+.texture li {
+  width: 300px;
+  height: 380px;
+  object-fit: cover;
+}
+
+.texture li:nth-child(1) {
+  margin: 100px 0px 0px -120px;
+}
+
+.texture img {
+  width: 350px;
+  height: 450px;
+}
+.texture p {
+  font-size: 45px;
+  margin: 20px 0px 0px -30px;
+  font-family: "Abhaya Libre", serif;
+}
+
+.con3 ul li:nth-child(2) h3 {
+  text-align: center;
+  margin: 80px 0px 15px;
+  font-size: 35px;
+  font-family: "Abhaya Libre", serif;
+}
+.soap {
+  font-family: "Freesentation-9Black";
+}
+.soap > ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.soap > ul > li {
+  margin-top: 20px;
+}
+
+.soap img {
+  width: 150px;
+}
+.soap h4 {
+  margin: 10px 0px;
+}
+.soap p {
+  font-size: 14px;
+  width: 300px;
+}
+
+.soap_tag {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  width: 250px;
+  font-size: 13px;
+  flex-wrap: wrap;
+}
+
+.soap_tag li {
+  padding: 3px;
+  background-color: #eee;
+}
+/* con4 */
+.con4 {
+  width: 100%;
+  padding: 100px 0px;
+}
+.con4 h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Abhaya Libre", serif;
+}
+
+.con4 ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.con4 ul img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+.con4 ul p {
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Freesentation-9Black";
+}
