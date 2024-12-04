@@ -15,6 +15,7 @@
     color: var(--color);
     position: fixed;
     top: 0;
+    z-index: 5;
   }
 
   header ul {
@@ -394,6 +395,7 @@
     color: var(--color);
     position: fixed;
     top: 0;
+    z-index: 5;
   }
 
   header ul {
@@ -778,6 +780,7 @@
     color: var(--color);
     position: fixed;
     top: 0;
+    z-index: 5;
   }
   header h1 {
     width: 70px;
@@ -1170,10 +1173,12 @@
     color: var(--color);
     position: fixed;
     top: 0;
+    z-index: 5;
+    background-color: #fff;
   }
   header h1 {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
   }
   header h1 img {
     width: 100%;
@@ -1183,7 +1188,7 @@
   header ul {
     display: flex;
     align-items: center;
-    font-size: 30px;
+    font-size: 25px;
     gap: 20px;
   }
 
