@@ -1,0 +1,278 @@
+:root {
+  --color: #004236;
+}
+
+/* 헤더 */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  color: var(--color);
+  position: fixed;
+  top: 0;
+  z-index: 5;
+}
+
+header ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 18px;
+  font-family: "Freesentation-9Black";
+}
+header h1 {
+  width: 70px;
+  height: 70px;
+}
+header h1 img {
+  width: 100%;
+  height: 100%;
+}
+header .down i {
+  font-size: 13px;
+  margin-left: 10px;
+}
+header .mobile {
+  display: none;
+}
+
+/* title */
+.title {
+  width: 100%;
+  padding: 120px 0px 0px;
+}
+.title ul {
+  display: flex;
+}
+.title ul h2 {
+  font-size: 75px;
+  font-family: "Abhaya Libre", serif;
+  font-weight: 700;
+  margin: 150px 0px 0px -80px;
+}
+.title ul p {
+  font-family: "Freesentation-9Black";
+  margin: 10px 0px 0px 30px;
+  font-size: 18px;
+  line-height: 28px;
+}
+.title ul li {
+  width: calc(100% / 2);
+}
+.title img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+/* con1 */
+.con1 {
+  width: 100%;
+  margin-top: 150px;
+}
+.con1 h3 {
+  width: 650px;
+  font-family: "Abhaya Libre", serif;
+  font-weight: 500;
+  font-size: 55px;
+  margin: 0px auto 15px;
+  color: var(--color);
+}
+.con1 h3 span {
+  width: 100px;
+  margin-left: 100px;
+}
+
+.con1 p {
+  font-family: "Freesentation-9Black";
+  text-align: center;
+  color: var(--color);
+}
+
+.con1 div {
+  width: 70%;
+  height: 500px;
+  margin: 30px auto 0px;
+  position: relative;
+  z-index: 2;
+}
+
+.con1 div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.con1 div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 1;
+}
+
+.con1 h4 {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 500;
+  font-size: 60px;
+  transform: translateY(-35px);
+  position: relative;
+  z-index: 5;
+  color: #888;
+}
+
+/* con2 */
+
+.con2 .txt {
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+}
+
+.con2 .txt li {
+  width: calc(100% / 4);
+  text-align: center;
+}
+
+.con2 .txt li h3 {
+  font-family: "Freesentation-8ExtraBold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-8ExtraBold.woff2")
+    format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  line-height: 40px;
+  font-size: 23px;
+  color: var(--color);
+  margin-top: 50px;
+}
+
+.con2 .txt li p {
+  font-family: "Freesentation-3Light";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-3Light.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+
+.con2 .txt li .member {
+  height: 80px;
+  font-family: "Freesentation-5Medium";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-5Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+.con2 .txt li h4 {
+  font-family: "Freesentation-6SemiBold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  line-height: 35px;
+  font-size: 18px;
+}
+
+/* con3 */
+.con3 {
+  width: 100%;
+}
+
+.con3 ul {
+  width: 70%;
+  display: flex;
+  gap: 10px;
+  margin: 50px auto;
+}
+
+.con3 ul li {
+  width: calc(100% / 2 - 10px);
+  height: 120px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.con3 ul li img {
+  width: 60px;
+}
+
+.con3 ul li h3 {
+  font-family: "Freesentation-8ExtraBold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-8ExtraBold.woff2")
+    format("woff2");
+  font-weight: 800;
+  margin-top: 50px;
+}
+
+.con3 ul li p {
+  height: 80px;
+  font-family: "Freesentation-5Medium";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-5Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+  line-height: 30px;
+  color: #777;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  color: var(--color);
+}
+footer ul {
+  display: flex;
+}
+
+footer ul li {
+  width: calc(100% / 2);
+}
+
+footer ul li:nth-child(1) {
+  font-size: 25px;
+  font-family: "Abhaya Libre", serif;
+  padding: 50px;
+  box-sizing: border-box;
+}
+footer ul li:nth-child(2) {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+footer ul li:nth-child(2) div {
+  width: 300px;
+  text-align: center;
+  font-family: "Freesentation-9Black";
+}
+footer ul li:nth-child(2) div h3 {
+  font-size: 22px;
+  line-height: 50px;
+}
+footer ul li:nth-child(2) div h4 {
+  line-height: 30px;
+}
+footer .sns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 35px;
+}
+
+footer > div {
+  font-size: 14px;
+  padding: 20px 50px;
+  box-sizing: border-box;
+}

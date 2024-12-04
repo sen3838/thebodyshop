@@ -87,7 +87,7 @@
     padding: 150px 0px 80px;
   }
   .con1 > ul {
-    width: 1200px;
+    width: 950px;
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -98,8 +98,8 @@
   }
 
   .con1 > ul > li:nth-child(1) {
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
   }
   .con1 > ul > li:nth-child(1) img {
     width: 100%;
@@ -112,15 +112,15 @@
   }
 
   .con1 .con1_right p {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     padding: 20px;
     box-sizing: border-box;
     font-family: "Freesentation-9Black";
   }
   .con1 .con1_right img {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     border-radius: 5px;
   }
@@ -409,7 +409,8 @@
     padding: 150px 0px 80px;
   }
   .con1 > ul {
-    width: 1200px;
+    width: 90%;
+
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -420,8 +421,8 @@
   }
 
   .con1 > ul > li:nth-child(1) {
-    width: 600px;
-    height: 600px;
+    width: 400px;
+    height: 400px;
   }
   .con1 > ul > li:nth-child(1) img {
     width: 100%;
@@ -434,15 +435,16 @@
   }
 
   .con1 .con1_right p {
-    width: 300px;
-    height: 300px;
-    padding: 20px;
+    width: 200px;
+    height: 200px;
+    padding: 20px 0px;
+    font-size: 12px;
     box-sizing: border-box;
     font-family: "Freesentation-9Black";
   }
   .con1 .con1_right img {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 5px;
   }
@@ -482,33 +484,42 @@
   .con2 {
     width: 100%;
     padding: 150px 0px;
+    overflow: hidden;
   }
 
   .con2 > ul {
     width: 90%;
     margin: 0 auto;
     display: flex;
+    justify-content: center;
   }
 
   .con2 > ul > li {
     width: calc(100% / 2);
   }
 
+  .con2 > ul > li:nth-child(2) {
+    margin-right: 300px;
+  }
+
   .con2 > ul > li > h3 {
-    width: 550px;
-    font-size: 55px;
+    width: 500px;
+
+    font-size: 50px;
     font-family: "Abhaya Libre", serif;
     font-weight: 600;
-    margin-left: 450px;
+    margin-left: 200px;
   }
   .con2 > ul > li > p {
     width: 500px;
     font-size: 18px;
     font-family: "Freesentation-9Black";
     font-weight: 600;
-    margin-left: 450px;
+    margin-left: 200px;
+    /* margin-left: 450px; */
   }
   .con2 .con2_right {
+    width: 100%;
     display: flex;
     gap: 10px;
   }
@@ -563,7 +574,7 @@
     margin: 0px auto;
     font-family: "Abhaya Libre", serif;
     font-weight: 700;
-    padding: 100px;
+    padding: 100px 0px;
     box-sizing: border-box;
   }
 
@@ -582,7 +593,7 @@
   .con3 h3 {
     color: rgb(164, 231, 173);
     text-align: center;
-    font-size: 45px;
+    font-size: 40px;
     position: relative;
     z-index: 3;
   }
