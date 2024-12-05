@@ -1162,7 +1162,6 @@
 /* --------모바일-------- */
 @media (max-width: 480px) {
   /* 헤더  */
-
   header {
     width: 100%;
     display: flex;

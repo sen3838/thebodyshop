@@ -1,278 +1,1214 @@
 :root {
   --color: #004236;
 }
+@media (min-width: 1000px) {
+  /* 헤더 */
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    color: var(--color);
+    position: fixed;
+    top: 0;
+    z-index: 5;
+  }
 
-/* 헤더 */
-header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 30px;
-  box-sizing: border-box;
-  color: var(--color);
-  position: fixed;
-  top: 0;
-  z-index: 5;
+  header ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 18px;
+    font-family: "Freesentation-9Black";
+  }
+  header h1 {
+    width: 70px;
+    height: 70px;
+  }
+  header h1 img {
+    width: 100%;
+    height: 100%;
+  }
+  header .down i {
+    font-size: 13px;
+    margin-left: 10px;
+  }
+  header .mobile {
+    display: none;
+  }
+
+  /* title */
+  .title {
+    width: 100%;
+    padding: 120px 0px 0px;
+  }
+  .title ul {
+    display: flex;
+  }
+  .title ul h2 {
+    font-size: 75px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 700;
+    margin: 150px 0px 0px -80px;
+  }
+  .title ul p {
+    font-family: "Freesentation-9Black";
+    margin: 10px 0px 0px 30px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .title ul li {
+    width: calc(100% / 2);
+  }
+  .title img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+  }
+
+  /* con1 */
+  .con1 {
+    width: 100%;
+    margin-top: 150px;
+  }
+  .con1 h3 {
+    width: 650px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 500;
+    font-size: 55px;
+    margin: 0px auto 15px;
+    color: var(--color);
+  }
+  .con1 h3 span {
+    width: 100px;
+    margin-left: 100px;
+  }
+
+  .con1 p {
+    font-family: "Freesentation-9Black";
+    text-align: center;
+    color: var(--color);
+  }
+
+  .con1 div {
+    width: 70%;
+    height: 500px;
+    margin: 30px auto 0px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .con1 div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .con1 div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 1;
+  }
+
+  .con1 h4 {
+    font-family: "Abhaya Libre", serif;
+    font-weight: 500;
+    font-size: 55px;
+    transform: translateY(-30px);
+    position: relative;
+    z-index: 5;
+    color: #888;
+  }
+
+  /* con2 */
+  .con2 .line {
+    width: 70%;
+    margin: 100px auto 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 27%;
+    position: relative;
+    list-style: none;
+  }
+
+  .con2 .line::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1.5px;
+    background-color: #004236;
+    z-index: 0;
+  }
+
+  .con2 .line li {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border: 2px solid #004236;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .con2 .txt {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+  }
+
+  .con2 .txt li {
+    width: calc(100% / 4);
+    text-align: center;
+  }
+
+  .con2 .txt li h3 {
+    font-family: "Freesentation-8ExtraBold";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-8ExtraBold.woff2")
+      format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    line-height: 40px;
+    font-size: 23px;
+    color: var(--color);
+    margin-top: 50px;
+  }
+
+  .con2 .txt li p {
+    font-family: "Freesentation-3Light";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-3Light.woff2")
+      format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 20px;
+    line-height: 25px;
+  }
+
+  .con2 .txt li .member {
+    height: 80px;
+    font-family: "Freesentation-5Medium";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-5Medium.woff2")
+      format("woff2");
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .con2 .txt li h4 {
+    font-family: "Freesentation-6SemiBold";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
+      format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    line-height: 35px;
+    font-size: 18px;
+  }
+
+  /* con3 */
+  .con3 {
+    width: 100%;
+  }
+
+  .con3 ul {
+    width: 70%;
+    display: flex;
+    gap: 10px;
+    margin: 50px auto;
+  }
+
+  .con3 ul li {
+    width: calc(100% / 2 - 10px);
+    height: 120px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .con3 ul li img {
+    width: 60px;
+  }
+
+  .con3 ul li h3 {
+    font-family: "Freesentation-8ExtraBold";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-8ExtraBold.woff2")
+      format("woff2");
+    font-weight: 800;
+    margin-top: 50px;
+  }
+
+  .con3 ul li p {
+    height: 80px;
+    font-family: "Freesentation-5Medium";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-5Medium.woff2")
+      format("woff2");
+    font-weight: 500;
+    line-height: 30px;
+    color: #777;
+  }
+
+  /* footer */
+  footer {
+    width: 100%;
+    color: var(--color);
+  }
+  footer ul {
+    display: flex;
+  }
+
+  footer ul li {
+    width: calc(100% / 2);
+  }
+
+  footer ul li:nth-child(1) {
+    font-size: 25px;
+    font-family: "Abhaya Libre", serif;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  footer ul li:nth-child(2) {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  footer ul li:nth-child(2) div {
+    width: 300px;
+    text-align: center;
+    font-family: "Freesentation-9Black";
+  }
+  footer ul li:nth-child(2) div h3 {
+    font-size: 22px;
+    line-height: 50px;
+  }
+  footer ul li:nth-child(2) div h4 {
+    line-height: 30px;
+  }
+  footer .sns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 35px;
+  }
+
+  footer > div {
+    font-size: 14px;
+    padding: 20px 50px;
+    box-sizing: border-box;
+  }
 }
 
-header ul {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  font-size: 18px;
-  font-family: "Freesentation-9Black";
-}
-header h1 {
-  width: 70px;
-  height: 70px;
-}
-header h1 img {
-  width: 100%;
-  height: 100%;
-}
-header .down i {
-  font-size: 13px;
-  margin-left: 10px;
-}
-header .mobile {
-  display: none;
+@media (min-width: 700px) and (max-width: 1000px) {
+  /* 헤더 */
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    color: var(--color);
+    position: fixed;
+    top: 0;
+    z-index: 5;
+  }
+
+  header ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 18px;
+    font-family: "Freesentation-9Black";
+  }
+  header h1 {
+    width: 70px;
+    height: 70px;
+  }
+  header h1 img {
+    width: 100%;
+    height: 100%;
+  }
+  header .down i {
+    font-size: 13px;
+    margin-left: 10px;
+  }
+  header .mobile {
+    display: none;
+  }
+
+  /* title */
+  .title {
+    width: 100%;
+    padding: 120px 0px 0px;
+  }
+  .title ul {
+    display: flex;
+  }
+  .title ul h2 {
+    font-size: 75px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 700;
+    margin: 150px 0px 0px -80px;
+  }
+  .title ul p {
+    font-family: "Freesentation-9Black";
+    margin: 10px 0px 0px 30px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .title ul li {
+    width: calc(100% / 2);
+  }
+  .title img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+  }
+
+  /* con1 */
+  .con1 {
+    width: 100%;
+    margin-top: 150px;
+  }
+  .con1 h3 {
+    width: 650px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 500;
+    font-size: 55px;
+    margin: 0px auto 15px;
+    color: var(--color);
+  }
+  .con1 h3 span {
+    width: 100px;
+    margin-left: 100px;
+  }
+
+  .con1 p {
+    font-family: "Freesentation-9Black";
+    text-align: center;
+    color: var(--color);
+  }
+
+  .con1 div {
+    width: 70%;
+    height: 500px;
+    margin: 30px auto 0px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .con1 div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .con1 div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 1;
+  }
+
+  .con1 h4 {
+    font-family: "Abhaya Libre", serif;
+    font-weight: 500;
+    font-size: 55px;
+    transform: translateY(-30px);
+    position: relative;
+    z-index: 5;
+    color: #888;
+  }
+
+  /* con2 */
+  .con2 .line {
+    width: 70%;
+    margin: 100px auto 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 27%;
+    position: relative;
+    list-style: none;
+  }
+
+  .con2 .line::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1.5px;
+    background-color: #004236;
+    z-index: 0;
+  }
+
+  .con2 .line li {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border: 2px solid #004236;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .con2 .txt {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+  }
+
+  .con2 .txt li {
+    width: calc(100% / 4);
+    text-align: center;
+  }
+
+  .con2 .txt li h3 {
+    font-family: "Freesentation-8ExtraBold";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-8ExtraBold.woff2")
+      format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    line-height: 40px;
+    font-size: 23px;
+    color: var(--color);
+    margin-top: 50px;
+  }
+
+  .con2 .txt li p {
+    font-family: "Freesentation-3Light";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-3Light.woff2")
+      format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 20px;
+    line-height: 25px;
+  }
+
+  .con2 .txt li .member {
+    height: 80px;
+    font-family: "Freesentation-5Medium";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-5Medium.woff2")
+      format("woff2");
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .con2 .txt li h4 {
+    font-family: "Freesentation-6SemiBold";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
+      format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    line-height: 35px;
+    font-size: 18px;
+  }
+
+  /* con3 */
+  .con3 {
+    width: 100%;
+  }
+
+  .con3 ul {
+    width: 70%;
+    display: flex;
+    gap: 10px;
+    margin: 50px auto;
+  }
+
+  .con3 ul li {
+    width: calc(100% / 2 - 10px);
+    height: 120px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .con3 ul li img {
+    width: 60px;
+  }
+
+  .con3 ul li h3 {
+    font-family: "Freesentation-8ExtraBold";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-8ExtraBold.woff2")
+      format("woff2");
+    font-weight: 800;
+    margin-top: 50px;
+  }
+
+  .con3 ul li p {
+    height: 80px;
+    font-family: "Freesentation-5Medium";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-5Medium.woff2")
+      format("woff2");
+    font-weight: 500;
+    line-height: 30px;
+    color: #777;
+  }
+
+  /* footer */
+  footer {
+    width: 100%;
+    color: var(--color);
+  }
+  footer ul {
+    display: flex;
+  }
+
+  footer ul li {
+    width: calc(100% / 2);
+  }
+
+  footer ul li:nth-child(1) {
+    font-size: 25px;
+    font-family: "Abhaya Libre", serif;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  footer ul li:nth-child(2) {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  footer ul li:nth-child(2) div {
+    width: 300px;
+    text-align: center;
+    font-family: "Freesentation-9Black";
+  }
+  footer ul li:nth-child(2) div h3 {
+    font-size: 22px;
+    line-height: 50px;
+  }
+  footer ul li:nth-child(2) div h4 {
+    line-height: 30px;
+  }
+  footer .sns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 35px;
+  }
+
+  footer > div {
+    font-size: 14px;
+    padding: 20px 50px;
+    box-sizing: border-box;
+  }
 }
 
-/* title */
-.title {
-  width: 100%;
-  padding: 120px 0px 0px;
-}
-.title ul {
-  display: flex;
-}
-.title ul h2 {
-  font-size: 75px;
-  font-family: "Abhaya Libre", serif;
-  font-weight: 700;
-  margin: 150px 0px 0px -80px;
-}
-.title ul p {
-  font-family: "Freesentation-9Black";
-  margin: 10px 0px 0px 30px;
-  font-size: 18px;
-  line-height: 28px;
-}
-.title ul li {
-  width: calc(100% / 2);
-}
-.title img {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
+@media (min-width: 481px) and (max-width: 699px) {
+  /* 헤더  */
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    color: var(--color);
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    background-color: #fff;
+  }
+  header h1 {
+    width: 50px;
+    height: 50px;
+  }
+  header h1 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  header ul {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    gap: 20px;
+  }
+
+  header .pc {
+    display: none;
+  }
+  /* title */
+  .title {
+    width: 100%;
+    padding: 80px 0px 0px;
+  }
+
+  .title ul h2 {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 700;
+  }
+  .title ul p {
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Freesentation-9Black";
+    text-align: center;
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  .title img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  /* con1 */
+  .con1 {
+    width: 100%;
+    margin-top: 150px;
+  }
+  .con1 h3 {
+    font-family: "Abhaya Libre", serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    margin: 0px auto 15px;
+    color: var(--color);
+  }
+  .con1 h3 span {
+    width: 50px;
+    margin-left: 20px;
+  }
+
+  .con1 p {
+    font-family: "Freesentation-9Black";
+    text-align: center;
+    color: var(--color);
+    font-size: 12px;
+  }
+
+  .con1 div {
+    width: 70%;
+    height: 250px;
+    margin: 30px auto 0px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .con1 div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .con1 div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 1;
+  }
+
+  .con1 h4 {
+    font-family: "Abhaya Libre", serif;
+    font-weight: 500;
+    font-size: 20px;
+    transform: translateY(-15px);
+    position: relative;
+    z-index: 5;
+    color: #888;
+  }
+
+  /* con2 */
+  .con2 .line {
+    width: 70%;
+    margin: 50px auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 27%;
+    position: relative;
+    list-style: none;
+  }
+
+  .con2 .line::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #004236;
+    z-index: 0;
+  }
+
+  .con2 .line li {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border: 1px solid #004236;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .con2 .txt {
+    width: 85%;
+    margin: 0px auto;
+    display: flex;
+  }
+
+  .con2 .txt li {
+    width: calc(100% / 4);
+    text-align: center;
+  }
+
+  .con2 .txt li h3 {
+    font-family: "Freesentation-8ExtraBold";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-8ExtraBold.woff2")
+      format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    line-height: 40px;
+    font-size: 16px;
+    color: var(--color);
+    margin-top: 50px;
+  }
+
+  .con2 .txt li p {
+    font-family: "Freesentation-3Light";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-3Light.woff2")
+      format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 20px;
+    line-height: 18px;
+    font-size: 12px;
+  }
+
+  .con2 .txt li .member {
+    height: 80px;
+    font-family: "Freesentation-5Medium";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-5Medium.woff2")
+      format("woff2");
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .con2 .txt li h4 {
+    font-family: "Freesentation-6SemiBold";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
+      format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    line-height: 35px;
+    font-size: 14px;
+  }
+
+  /* con3 */
+  .con3 {
+    width: 100%;
+  }
+
+  .con3 ul {
+    width: 70%;
+    /* display: flex;
+    gap: 10px; */
+    margin: 50px auto;
+  }
+
+  .con3 ul li {
+    /* width: calc(100% / 2 - 10px); */
+    margin-top: 10px;
+    height: 120px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .con3 ul li img {
+    width: 40px;
+  }
+
+  .con3 ul li h3 {
+    font-family: "Freesentation-8ExtraBold";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-8ExtraBold.woff2")
+      format("woff2");
+    font-weight: 800;
+    margin-top: 50px;
+  }
+
+  .con3 ul li p {
+    height: 80px;
+    font-family: "Freesentation-5Medium";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-5Medium.woff2")
+      format("woff2");
+    font-weight: 500;
+    line-height: 30px;
+    color: #777;
+  }
+
+  /* footer */
+  footer {
+    width: 100%;
+    color: var(--color);
+  }
+
+  footer ul li:nth-child(1) {
+    display: none;
+  }
+  footer ul li:nth-child(2) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  footer ul li:nth-child(2) div {
+    width: 30%;
+    text-align: center;
+    font-family: "Freesentation-9Black";
+  }
+  footer ul li:nth-child(2) div h3 {
+    line-height: 50px;
+  }
+  footer ul li:nth-child(2) div h4 {
+    font-size: 15px;
+    line-height: 30px;
+  }
+  footer .sns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+  }
+
+  footer > div {
+    font-size: 14px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin-top: 20px;
+  }
 }
 
-/* con1 */
-.con1 {
-  width: 100%;
-  margin-top: 150px;
-}
-.con1 h3 {
-  width: 650px;
-  font-family: "Abhaya Libre", serif;
-  font-weight: 500;
-  font-size: 55px;
-  margin: 0px auto 15px;
-  color: var(--color);
-}
-.con1 h3 span {
-  width: 100px;
-  margin-left: 100px;
-}
+@media (max-width: 480px) {
+  /* 헤더  */
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    color: var(--color);
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    background-color: #fff;
+  }
+  header h1 {
+    width: 50px;
+    height: 50px;
+  }
+  header h1 img {
+    width: 100%;
+    height: 100%;
+  }
 
-.con1 p {
-  font-family: "Freesentation-9Black";
-  text-align: center;
-  color: var(--color);
-}
+  header ul {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    gap: 20px;
+  }
 
-.con1 div {
-  width: 70%;
-  height: 500px;
-  margin: 30px auto 0px;
-  position: relative;
-  z-index: 2;
-}
+  header .pc {
+    display: none;
+  }
+  /* title */
+  .title {
+    width: 100%;
+    padding: 80px 0px 0px;
+  }
 
-.con1 div img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+  .title ul h2 {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 700;
+  }
+  .title ul p {
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Freesentation-9Black";
+    text-align: center;
+    font-size: 15px;
+    line-height: 23px;
+  }
 
-.con1 div::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.3);
-  z-index: 1;
-}
+  .title img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
 
-.con1 h4 {
-  font-family: "Abhaya Libre", serif;
-  font-weight: 500;
-  font-size: 60px;
-  transform: translateY(-35px);
-  position: relative;
-  z-index: 5;
-  color: #888;
-}
+  /* con1 */
+  .con1 {
+    width: 100%;
+    margin-top: 150px;
+  }
+  .con1 h3 {
+    font-family: "Abhaya Libre", serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    margin: 0px auto 15px;
+    color: var(--color);
+  }
+  .con1 h3 span {
+    width: 50px;
+    margin-left: 20px;
+  }
 
-/* con2 */
+  .con1 p {
+    font-family: "Freesentation-9Black";
+    text-align: center;
+    color: var(--color);
+    font-size: 12px;
+  }
 
-.con2 .txt {
-  width: 80%;
-  margin: 0px auto;
-  display: flex;
-}
+  .con1 div {
+    width: 70%;
+    height: 250px;
+    margin: 30px auto 0px;
+    position: relative;
+    z-index: 2;
+  }
 
-.con2 .txt li {
-  width: calc(100% / 4);
-  text-align: center;
-}
+  .con1 div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-.con2 .txt li h3 {
-  font-family: "Freesentation-8ExtraBold";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-8ExtraBold.woff2")
-    format("woff2");
-  font-weight: 800;
-  font-style: normal;
-  line-height: 40px;
-  font-size: 23px;
-  color: var(--color);
-  margin-top: 50px;
-}
+  .con1 div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 1;
+  }
 
-.con2 .txt li p {
-  font-family: "Freesentation-3Light";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-3Light.woff2")
-    format("woff2");
-  font-weight: 300;
-  font-style: normal;
-  margin-bottom: 20px;
-  line-height: 25px;
-}
+  .con1 h4 {
+    font-family: "Abhaya Libre", serif;
+    font-weight: 500;
+    font-size: 20px;
+    transform: translateY(-15px);
+    position: relative;
+    z-index: 5;
+    color: #888;
+  }
 
-.con2 .txt li .member {
-  height: 80px;
-  font-family: "Freesentation-5Medium";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-5Medium.woff2")
-    format("woff2");
-  font-weight: 500;
-  font-style: normal;
-}
+  /* con2 */
+  .con2 .line {
+    width: 70%;
+    margin: 50px auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 27%;
+    position: relative;
+    list-style: none;
+  }
 
-.con2 .txt li h4 {
-  font-family: "Freesentation-6SemiBold";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
-    format("woff2");
-  font-weight: 600;
-  font-style: normal;
-  line-height: 35px;
-  font-size: 18px;
-}
+  .con2 .line::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #004236;
+    z-index: 0;
+  }
 
-/* con3 */
-.con3 {
-  width: 100%;
-}
+  .con2 .line li {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border: 1px solid #004236;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .con2 .txt {
+    width: 85%;
+    margin: 0px auto;
+    display: flex;
+  }
 
-.con3 ul {
-  width: 70%;
-  display: flex;
-  gap: 10px;
-  margin: 50px auto;
-}
+  .con2 .txt li {
+    width: calc(100% / 4);
+    text-align: center;
+  }
 
-.con3 ul li {
-  width: calc(100% / 2 - 10px);
-  height: 120px;
-  display: flex;
-  gap: 30px;
-  align-items: center;
-  justify-content: center;
-  background-color: #eee;
-  border-radius: 5px;
-}
+  .con2 .txt li h3 {
+    font-family: "Freesentation-8ExtraBold";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-8ExtraBold.woff2")
+      format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    line-height: 40px;
+    font-size: 16px;
+    color: var(--color);
+    margin-top: 50px;
+  }
 
-.con3 ul li img {
-  width: 60px;
-}
+  .con2 .txt li p {
+    font-family: "Freesentation-3Light";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-3Light.woff2")
+      format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 20px;
+    line-height: 18px;
+    font-size: 12px;
+  }
 
-.con3 ul li h3 {
-  font-family: "Freesentation-8ExtraBold";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-8ExtraBold.woff2")
-    format("woff2");
-  font-weight: 800;
-  margin-top: 50px;
-}
+  .con2 .txt li .member {
+    height: 80px;
+    font-family: "Freesentation-5Medium";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-5Medium.woff2")
+      format("woff2");
+    font-weight: 500;
+    font-style: normal;
+  }
 
-.con3 ul li p {
-  height: 80px;
-  font-family: "Freesentation-5Medium";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-5Medium.woff2")
-    format("woff2");
-  font-weight: 500;
-  line-height: 30px;
-  color: #777;
-}
+  .con2 .txt li h4 {
+    font-family: "Freesentation-6SemiBold";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
+      format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    line-height: 35px;
+    font-size: 14px;
+  }
 
-/* footer */
-footer {
-  width: 100%;
-  color: var(--color);
-}
-footer ul {
-  display: flex;
-}
+  /* con3 */
+  .con3 {
+    width: 100%;
+  }
 
-footer ul li {
-  width: calc(100% / 2);
-}
+  .con3 ul {
+    width: 70%;
+    /* display: flex;
+    gap: 10px; */
+    margin: 50px auto;
+  }
 
-footer ul li:nth-child(1) {
-  font-size: 25px;
-  font-family: "Abhaya Libre", serif;
-  padding: 50px;
-  box-sizing: border-box;
-}
-footer ul li:nth-child(2) {
-  display: flex;
-  gap: 50px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-footer ul li:nth-child(2) div {
-  width: 300px;
-  text-align: center;
-  font-family: "Freesentation-9Black";
-}
-footer ul li:nth-child(2) div h3 {
-  font-size: 22px;
-  line-height: 50px;
-}
-footer ul li:nth-child(2) div h4 {
-  line-height: 30px;
-}
-footer .sns {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  font-size: 35px;
-}
+  .con3 ul li {
+    /* width: calc(100% / 2 - 10px); */
+    margin-top: 10px;
+    height: 120px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 
-footer > div {
-  font-size: 14px;
-  padding: 20px 50px;
-  box-sizing: border-box;
+  .con3 ul li img {
+    width: 40px;
+  }
+
+  .con3 ul li h3 {
+    font-family: "Freesentation-8ExtraBold";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-8ExtraBold.woff2")
+      format("woff2");
+    font-weight: 800;
+    margin-top: 50px;
+  }
+
+  .con3 ul li p {
+    height: 80px;
+    font-family: "Freesentation-5Medium";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-5Medium.woff2")
+      format("woff2");
+    font-weight: 500;
+    line-height: 30px;
+    color: #777;
+  }
+
+  /* footer */
+  footer {
+    width: 100%;
+    color: var(--color);
+  }
+
+  footer ul li:nth-child(1) {
+    display: none;
+  }
+  footer ul li:nth-child(2) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  footer ul li:nth-child(2) div {
+    width: 30%;
+    text-align: center;
+    font-family: "Freesentation-9Black";
+  }
+  footer ul li:nth-child(2) div h3 {
+    line-height: 50px;
+  }
+  footer ul li:nth-child(2) div h4 {
+    font-size: 15px;
+    line-height: 30px;
+  }
+  footer .sns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+  }
+
+  footer > div {
+    font-size: 14px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin-top: 20px;
+  }
 }
