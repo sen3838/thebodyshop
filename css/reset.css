@@ -19,6 +19,9 @@ body {
   box-sizing: border-box;
 }
 
+:root {
+  --color: #004236;
+}
 @font-face {
   font-family: "Freesentation-1Thin";
   src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-1Thin.woff2")
