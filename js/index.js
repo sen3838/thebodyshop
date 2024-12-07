@@ -19,10 +19,10 @@ $(function () {
     .to(upbox, { scale: "0.5", duration: "10", opacity: "1" });
 
   let con1 = $(".con1").offset().top + 600;
-  let con2 = $(".con2").offset().top + 600;
+  let con2 = $(".con2").offset().top + 800;
   let con2c2 = $(".con2 .c2").offset().top + 600;
-  let con3 = $(".con3").offset().top + 500;
-  let con4 = $(".con4").offset().top + 500;
+  let con3 = $(".con3").offset().top + 800;
+  let con4 = $(".con4").offset().top + 600;
   console.log(con1);
 
   $(window).on("scroll", function () {
