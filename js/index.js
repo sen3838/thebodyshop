@@ -16,7 +16,7 @@ $(function () {
       },
     })
     .to(txt, { opacity: "1", duration: "10" })
-    .to(upbox, { scale: "0.5", duration: "10", opacity: "1" });
+    .to(upbox, { scale: "0.45", duration: "10", opacity: "1" });
 
   // 헤더 메뉴
   $("header .bar").on("click", function () {

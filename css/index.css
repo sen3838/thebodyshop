@@ -1281,7 +1281,7 @@
   header .menu_wrap > ul {
     width: 100%;
     height: 100vh;
-    padding: 80px 0px;
+    padding: 30px 0px;
     box-sizing: border-box;
     font-family: "Freesentation-9Black";
     color: var(--color);
@@ -1292,15 +1292,17 @@
     text-align: center;
     background-color: rgba(255, 255, 255, 0.8);
   }
-
+  header .menu_wrap > ul > li {
+    height: calc(100% / 5);
+  }
   header .menu_wrap > ul > li > a {
-    font-size: 23px;
+    font-size: 20px;
   }
 
   header .menu_wrap .sub_menu {
     font-size: 15px;
-    line-height: 40px;
-    margin-bottom: 20px;
+    line-height: 25px;
+    margin-bottom: 10px;
     font-family: "Freesentation-8ExtraBold";
   }
 
@@ -1325,6 +1327,7 @@
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: rgba(111, 115, 119, 0.2) 0px 8px 24px;
   }
+
   /* 비쥬얼 */
   .visual {
     width: 100%;
@@ -1888,7 +1891,7 @@
   header .menu_wrap > ul {
     width: 100%;
     height: 100vh;
-    padding: 80px 0px;
+    padding: 30px 0px;
     box-sizing: border-box;
     font-family: "Freesentation-9Black";
     color: var(--color);
@@ -1899,15 +1902,17 @@
     text-align: center;
     background-color: rgba(255, 255, 255, 0.8);
   }
-
+  header .menu_wrap > ul > li {
+    height: calc(100% / 5);
+  }
   header .menu_wrap > ul > li > a {
-    font-size: 23px;
+    font-size: 20px;
   }
 
   header .menu_wrap .sub_menu {
     font-size: 15px;
-    line-height: 40px;
-    margin-bottom: 20px;
+    line-height: 25px;
+    margin-bottom: 10px;
     font-family: "Freesentation-8ExtraBold";
   }
 
