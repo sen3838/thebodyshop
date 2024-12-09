@@ -69,6 +69,13 @@
     width: 100%;
     text-align: center;
     font-size: 110px;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.8s;
+  }
+  .title.on ul li:nth-child(1) h2 {
+    transform: translateY(0);
+    opacity: 1;
   }
   .title ul li:nth-child(2) {
     width: 25%;
@@ -93,16 +100,25 @@
     font-weight: 500;
     font-size: 65px;
     text-align: center;
+    transition: 1s;
+    transform: scale(0.8);
   }
 
   .con1 > p {
     text-align: center;
     font-family: "Freesentation-6SemiBold";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
-      format("woff2");
-    font-weight: 600;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 1.5s;
   }
-
+  .con1.on > h3 {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .con1.on p {
+    opacity: 1;
+    transform: translateY(0px);
+  }
   .con1 ul {
     width: 80%;
     display: flex;
@@ -126,24 +142,43 @@
     font-weight: 500;
     font-size: 38px;
     line-height: 48px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.8s;
+    transition-delay: 0.3s;
   }
   .con1 ul p {
     font-family: "Freesentation-6SemiBold";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
-      format("woff2");
-    font-weight: 600;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.8s;
+    transition-delay: 0.5s;
   }
   .con1 ul a {
     font-family: "Freesentation-6SemiBold";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
-      format("woff2");
-    font-weight: 600;
-    /* margin-top: 120px; */
     position: absolute;
     bottom: 25px;
     display: block;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.8s;
+    transition-delay: 0.8s;
   }
 
+  .con1.on ul h3 {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  .con1.on ul p {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  .con1.on ul a {
+    opacity: 1;
+    transform: translateY(0px);
+  }
   /* con2 */
 
   .con2 {
@@ -156,8 +191,13 @@
     font-weight: 500;
     font-size: 65px;
     text-align: center;
+    transition: 1s;
+    transform: scale(0.8);
   }
-
+  .con2.on > h3 {
+    opacity: 1;
+    transform: scale(1);
+  }
   .sub {
     display: flex;
     justify-content: center;
@@ -172,9 +212,6 @@
     border-radius: 30px;
     border: 1px solid #004236;
     font-family: "Freesentation-6SemiBold";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
-      format("woff2");
-    font-weight: 600;
     cursor: pointer;
     box-sizing: border-box;
     transition: 0.4s;
@@ -199,23 +236,31 @@
   .list span {
     font-size: 13px;
     font-family: "Freesentation-4Regular";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-4Regular.woff2")
-      format("woff2");
-    font-weight: 400;
   }
   .list h4 {
     font-family: "Freesentation-6SemiBold";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
-      format("woff2");
-    font-weight: 600;
     font-size: 18px;
     line-height: 35px;
     margin-top: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.8s;
+    transition-delay: 0.5s;
   }
   .list i {
     font-size: 20px;
+    transform: rotate(180deg);
+    transition: 0.5s;
+    transition-delay: 1s;
   }
 
+  .con2.on .list h4 {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  .con2.on .list i {
+    transform: rotate(0deg);
+  }
   .sub li:hover {
     background-color: #fceea3;
     color: #004236;
@@ -244,15 +289,26 @@
     font-weight: 500;
     font-size: 45px;
     line-height: 70px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.8s;
   }
 
   .con3 .wrap p {
     font-family: "Freesentation-6SemiBold";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
-      format("woff2");
-    font-weight: 600;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.8s;
+    transition-delay: 0.5s;
   }
-
+  .con3.on .wrap h3 {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  .con3.on .wrap p {
+    opacity: 1;
+    transform: translateY(0px);
+  }
   /* footer */
   footer {
     width: 100%;
@@ -372,6 +428,13 @@
     width: 100%;
     text-align: center;
     font-size: 90px;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.8s;
+  }
+  .title.on ul li:nth-child(1) h2 {
+    transform: translateY(0);
+    opacity: 1;
   }
   .title ul li:nth-child(2) {
     width: 25%;
@@ -396,14 +459,24 @@
     font-weight: 500;
     font-size: 65px;
     text-align: center;
+    transition: 1s;
+    transform: scale(0.8);
   }
 
   .con1 > p {
     text-align: center;
     font-family: "Freesentation-6SemiBold";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
-      format("woff2");
-    font-weight: 600;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 1.5s;
+  }
+  .con1.on > h3 {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .con1.on p {
+    opacity: 1;
+    transform: translateY(0px);
   }
   .con1 ul {
     width: 80%;
@@ -428,26 +501,44 @@
     font-weight: 500;
     font-size: 30px;
     line-height: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.8s;
+    transition-delay: 0.3s;
   }
   .con1 ul p {
     font-family: "Freesentation-6SemiBold";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
-      format("woff2");
-    font-weight: 600;
     font-size: 15px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.8s;
+    transition-delay: 0.5s;
   }
   .con1 ul a {
     font-family: "Freesentation-6SemiBold";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
-      format("woff2");
-    font-weight: 600;
-    /* margin-top: 20%; */
     display: block;
     font-size: 13px;
     position: absolute;
     bottom: 25px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.8s;
+    transition-delay: 0.8s;
+  }
+  .con1.on ul h3 {
+    opacity: 1;
+    transform: translateY(0px);
   }
 
+  .con1.on ul p {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  .con1.on ul a {
+    opacity: 1;
+    transform: translateY(0px);
+  }
   /* con2 */
 
   .con2 {
@@ -459,8 +550,13 @@
     font-weight: 500;
     font-size: 65px;
     text-align: center;
+    transition: 1s;
+    transform: scale(0.8);
   }
-
+  .con2.on > h3 {
+    opacity: 1;
+    transform: scale(1);
+  }
   .sub {
     display: flex;
     justify-content: center;
@@ -475,9 +571,6 @@
     border-radius: 30px;
     border: 1px solid #004236;
     font-family: "Freesentation-6SemiBold";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
-      format("woff2");
-    font-weight: 600;
     cursor: pointer;
     box-sizing: border-box;
     transition: 0.4s;
@@ -502,23 +595,30 @@
   .list span {
     font-size: 13px;
     font-family: "Freesentation-4Regular";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-4Regular.woff2")
-      format("woff2");
-    font-weight: 400;
   }
   .list h4 {
     font-family: "Freesentation-6SemiBold";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
-      format("woff2");
-    font-weight: 600;
     font-size: 18px;
     line-height: 35px;
     margin-top: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.8s;
+    transition-delay: 0.5s;
   }
   .list i {
     font-size: 20px;
+    transform: rotate(180deg);
+    transition: 0.5s;
+    transition-delay: 1s;
   }
-
+  .con2.on .list h4 {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  .con2.on .list i {
+    transform: rotate(0deg);
+  }
   .sub li:hover {
     background-color: #fceea3;
     color: #004236;
@@ -547,15 +647,26 @@
     font-weight: 500;
     font-size: 45px;
     line-height: 70px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.8s;
   }
 
   .con3 .wrap p {
     font-family: "Freesentation-6SemiBold";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
-      format("woff2");
-    font-weight: 600;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.8s;
+    transition-delay: 0.5s;
   }
-
+  .con3.on .wrap h3 {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  .con3.on .wrap p {
+    opacity: 1;
+    transform: translateY(0px);
+  }
   /* footer */
   footer {
     width: 100%;
@@ -657,7 +768,6 @@
 
   .title ul li:nth-child(1) {
     width: 100%;
-
     font-family: "Abhaya Libre", serif;
     font-weight: 700;
     order: 2;
@@ -667,6 +777,13 @@
     width: 100%;
     text-align: center;
     font-size: 50px;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.8s;
+  }
+  .title.on ul li:nth-child(1) h2 {
+    transform: translateY(0);
+    opacity: 1;
   }
   .title ul li:nth-child(2) {
     width: 100%;
@@ -690,14 +807,24 @@
     font-weight: 500;
     font-size: 40px;
     text-align: center;
+    transition: 1s;
+    transform: scale(0.8);
   }
 
   .con1 > p {
     text-align: center;
     font-family: "Freesentation-6SemiBold";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
-      format("woff2");
-    font-weight: 600;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 1.5s;
+  }
+  .con1.on > h3 {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .con1.on p {
+    opacity: 1;
+    transform: translateY(0px);
   }
   .con1 ul {
     width: 80%;
@@ -719,26 +846,44 @@
     font-weight: 500;
     font-size: 25px;
     line-height: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.8s;
+    transition-delay: 0.3s;
   }
   .con1 ul p {
     font-size: 14px;
     font-family: "Freesentation-6SemiBold";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
-      format("woff2");
-    font-weight: 600;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.8s;
+    transition-delay: 0.5s;
   }
   .con1 ul a {
     font-size: 12px;
     font-family: "Freesentation-6SemiBold";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
-      format("woff2");
-    font-weight: 600;
-    /* margin-top: 20%; */
     display: block;
     position: absolute;
     bottom: 20px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.8s;
+    transition-delay: 0.8s;
+  }
+  .con1.on ul h3 {
+    opacity: 1;
+    transform: translateY(0px);
   }
 
+  .con1.on ul p {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  .con1.on ul a {
+    opacity: 1;
+    transform: translateY(0px);
+  }
   /* con2 */
 
   .con2 {
@@ -750,8 +895,13 @@
     font-weight: 500;
     font-size: 40px;
     text-align: center;
+    transition: 1s;
+    transform: scale(0.8);
   }
-
+  .con2.on > h3 {
+    opacity: 1;
+    transform: scale(1);
+  }
   .sub {
     width: 85%;
     display: flex;
@@ -770,9 +920,6 @@
     border-radius: 30px;
     border: 1px solid #004236;
     font-family: "Freesentation-6SemiBold";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
-      format("woff2");
-    font-weight: 600;
     cursor: pointer;
     box-sizing: border-box;
     transition: 0.4s;
@@ -797,23 +944,24 @@
   .list span {
     font-size: 9px;
     font-family: "Freesentation-4Regular";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-4Regular.woff2")
-      format("woff2");
-    font-weight: 400;
   }
   .list h4 {
     font-family: "Freesentation-6SemiBold";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
-      format("woff2");
-    font-weight: 600;
     font-size: 13px;
     line-height: 20px;
     margin-top: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.8s;
+    transition-delay: 0.5s;
   }
   .list i {
     display: none;
   }
-
+  .con2.on .list h4 {
+    opacity: 1;
+    transform: translateY(0px);
+  }
   .sub li:hover {
     background-color: #fceea3;
     color: #004236;
@@ -841,16 +989,28 @@
     font-family: "Abhaya Libre", serif;
     font-weight: 500;
     font-size: 23px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.5s;
+    /* transition-delay: 0.5s; */
   }
 
   .con3 .wrap p {
     font-family: "Freesentation-6SemiBold";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
-      format("woff2");
-    font-weight: 600;
     font-size: 11px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.5s;
+    transition-delay: 0.5s;
   }
-
+  .con3.on .wrap h3 {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  .con3.on .wrap p {
+    opacity: 1;
+    transform: translateY(0px);
+  }
   /* footer */
   footer {
     width: 100%;
@@ -946,7 +1106,6 @@
 
   .title ul li:nth-child(1) {
     width: 100%;
-
     font-family: "Abhaya Libre", serif;
     font-weight: 700;
     order: 2;
@@ -955,7 +1114,14 @@
   .title ul li:nth-child(1) h2 {
     width: 100%;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.8s;
+  }
+  .title.on ul li:nth-child(1) h2 {
+    transform: translateY(0);
+    opacity: 1;
   }
   .title ul li:nth-child(2) {
     width: 100%;
@@ -979,14 +1145,24 @@
     font-weight: 500;
     font-size: 40px;
     text-align: center;
+    transition: 1s;
+    transform: scale(0.8);
   }
 
   .con1 > p {
     text-align: center;
     font-family: "Freesentation-6SemiBold";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
-      format("woff2");
-    font-weight: 600;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 1.5s;
+  }
+  .con1.on > h3 {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .con1.on p {
+    opacity: 1;
+    transform: translateY(0px);
   }
   .con1 ul {
     width: 80%;
@@ -1008,24 +1184,43 @@
     font-weight: 500;
     font-size: 25px;
     line-height: 30px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.8s;
+    transition-delay: 0.3s;
   }
   .con1 ul p {
     font-size: 14px;
     font-family: "Freesentation-6SemiBold";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
-      format("woff2");
-    font-weight: 600;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.8s;
+    transition-delay: 0.5s;
   }
   .con1 ul a {
-    font-size: 12px;
+    font-size: 10px;
     font-family: "Freesentation-6SemiBold";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
-      format("woff2");
-    font-weight: 600;
-    /* margin-top: 20%; */
     position: absolute;
     display: block;
     bottom: 20px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.8s;
+    transition-delay: 0.8s;
+  }
+  .con1.on ul h3 {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  .con1.on ul p {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  .con1.on ul a {
+    opacity: 1;
+    transform: translateY(0px);
   }
 
   /* con2 */
@@ -1039,8 +1234,13 @@
     font-weight: 500;
     font-size: 40px;
     text-align: center;
+    transition: 1s;
+    transform: scale(0.8);
   }
-
+  .con2.on > h3 {
+    opacity: 1;
+    transform: scale(1);
+  }
   .sub {
     width: 85%;
     display: flex;
@@ -1059,9 +1259,6 @@
     border-radius: 30px;
     border: 1px solid #004236;
     font-family: "Freesentation-6SemiBold";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
-      format("woff2");
-    font-weight: 600;
     cursor: pointer;
     box-sizing: border-box;
     transition: 0.4s;
@@ -1086,23 +1283,24 @@
   .list span {
     font-size: 9px;
     font-family: "Freesentation-4Regular";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-4Regular.woff2")
-      format("woff2");
-    font-weight: 400;
   }
   .list h4 {
     font-family: "Freesentation-6SemiBold";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
-      format("woff2");
-    font-weight: 600;
     font-size: 13px;
     line-height: 20px;
     margin-top: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.8s;
+    transition-delay: 0.5s;
   }
   .list i {
     display: none;
   }
-
+  .con2.on .list h4 {
+    opacity: 1;
+    transform: translateY(0px);
+  }
   .sub li:hover {
     background-color: #fceea3;
     color: #004236;
@@ -1130,16 +1328,27 @@
     font-family: "Abhaya Libre", serif;
     font-weight: 500;
     font-size: 23px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.5s;
   }
 
   .con3 .wrap p {
     font-family: "Freesentation-6SemiBold";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
-      format("woff2");
-    font-weight: 600;
     font-size: 11px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.5s;
+    transition-delay: 0.5s;
   }
-
+  .con3.on .wrap h3 {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  .con3.on .wrap p {
+    opacity: 1;
+    transform: translateY(0px);
+  }
   /* footer */
   footer {
     width: 100%;

@@ -98,24 +98,17 @@
     font-weight: 700;
     text-align: center;
     color: var(--color);
-    /* opacity: 0; */
     transition: 1s;
     transform: scale(0.8);
   }
 
   .con1 h3 span {
     font-family: "Freesentation-7Bold";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-7Bold.woff2")
-      format("woff2");
-    font-weight: 700;
     font-size: 35px;
   }
 
   .con1 > p {
     font-family: "Freesentation-5Medium";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-5Medium.woff2")
-      format("woff2");
-    font-weight: 500;
     font-size: 20px;
     text-align: center;
     margin-top: 30px;

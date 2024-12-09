@@ -17,6 +17,7 @@ a {
 body {
   color: #444;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 :root {

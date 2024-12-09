@@ -53,12 +53,26 @@
     font-family: "Abhaya Libre", serif;
     font-weight: 700;
     margin: 100px 0px 0px -80px;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.5s;
   }
   .title ul p {
     font-family: "Freesentation-9Black";
     margin: 10px 0px 0px 30px;
     font-size: 18px;
     line-height: 28px;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 1s;
+  }
+  .title.on h2 {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .title.on p {
+    transform: translateY(0);
+    opacity: 1;
   }
   .title ul li {
     width: calc(100% / 2);
@@ -73,6 +87,7 @@
   .con1 {
     width: 100%;
     padding: 100px 0px;
+    overflow: hidden;
   }
   .con1 > h3 {
     font-size: 40px;
@@ -80,11 +95,24 @@
     font-family: "Abhaya Libre", serif;
     margin-bottom: 15px;
     color: var(--color);
+    transition: 1s;
+    transform: scale(0.8);
   }
   .con1 > h4 {
     text-align: center;
     font-family: "Abhaya Libre", serif;
     color: var(--color);
+    transition: 2.5s;
+    transform: scale(0.9);
+  }
+  .con1.on > h3 {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .con1.on > h4 {
+    opacity: 1;
+    transform: scale(1);
   }
 
   .con1 ul {
@@ -118,6 +146,25 @@
     position: relative;
     z-index: 1;
   }
+  .con1 ul li:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: 1.3s;
+  }
+  .con1.on ul li:nth-child(2) {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .con1 ul li:nth-child(6) {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: 1.5s;
+  }
+  .con1.on ul li:nth-child(6) {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
   .con1 ul li:nth-child(2) h3,
   .con1 ul li:nth-child(6) h3 {
     font-size: 16px;
@@ -156,10 +203,11 @@
 
   .con1 > div > .line {
     width: 10px;
-    height: 100px;
+    height: 0px;
     background-image: radial-gradient(circle, #004236 1px, transparent 2px);
     background-size: 12px 12px;
     margin: 20px auto;
+    transition: 1s;
   }
 
   .con1 > div h3 {
@@ -167,22 +215,43 @@
     font-family: "Abhaya Libre", serif;
     font-weight: 900;
     font-size: 40px;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: 1.2s;
   }
 
   .con1 > div h3 span {
     font-size: 23px;
     font-family: "Freesentation-9Black";
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: 1.5s;
   }
   .con1 > div p {
     text-align: center;
     margin-top: 30px;
     font-family: "Freesentation-4Regular";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-4Regular.woff2")
-      format("woff2");
-    font-weight: 400;
     font-style: normal;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: 1.8s;
   }
 
+  .con1.on > div > .line {
+    height: 100px;
+  }
+  .con1.on > div > h3 {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .con1.on > div > h3 span {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .con1.on > div > p {
+    opacity: 1;
+    transform: translateY(0);
+  }
   /* con2 */
   .con2 ul {
     display: flex;
@@ -198,15 +267,18 @@
     width: 70%;
     margin: 50px auto 10px;
     font-family: "Freesentation-9Black";
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1.3s;
   }
   .con2 ul li p {
     width: 70%;
     margin: 0px auto;
     font-family: "Freesentation-4Regular";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-4Regular.woff2")
-      format("woff2");
-    font-weight: 400;
     font-style: normal;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1.5s;
   }
 
   .con2 ul li:nth-child(1) img {
@@ -222,6 +294,9 @@
     font-size: 80px;
     margin-left: -150px;
     font-family: "Abhaya Libre", serif;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s;
   }
 
   .con2 ul li:nth-child(2) img {
@@ -232,6 +307,18 @@
     display: block;
   }
 
+  .con2.on ul li:nth-child(2) h3 {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .con2.on ul li h4 {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .con2.on ul li p {
+    opacity: 1;
+    transform: translateY(0);
+  }
   /* 흐르는 텍스트 */
 
   .marquee-container {
@@ -367,12 +454,26 @@
     font-family: "Abhaya Libre", serif;
     font-weight: 700;
     margin: 100px 0px 0px -80px;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.5s;
   }
   .title ul p {
     font-family: "Freesentation-9Black";
     margin: 10px 0px 0px 30px;
     font-size: 18px;
     line-height: 28px;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 1s;
+  }
+  .title.on h2 {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .title.on p {
+    transform: translateY(0);
+    opacity: 1;
   }
   .title ul li {
     width: calc(100% / 2);
@@ -387,6 +488,7 @@
   .con1 {
     width: 100%;
     padding: 100px 0px;
+    overflow: hidden;
   }
   .con1 > h3 {
     font-size: 40px;
@@ -394,13 +496,25 @@
     font-family: "Abhaya Libre", serif;
     margin-bottom: 15px;
     color: var(--color);
+    transition: 1s;
+    transform: scale(0.8);
   }
   .con1 > h4 {
     text-align: center;
     font-family: "Abhaya Libre", serif;
     color: var(--color);
+    transition: 2.5s;
+    transform: scale(0.9);
+  }
+  .con1.on > h3 {
+    opacity: 1;
+    transform: scale(1);
   }
 
+  .con1.on > h4 {
+    opacity: 1;
+    transform: scale(1);
+  }
   .con1 ul {
     width: 100%;
     display: flex;
@@ -431,6 +545,24 @@
     border: 0.5px solid #004236;
     position: relative;
     z-index: 1;
+  }
+  .con1 ul li:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: 1.3s;
+  }
+  .con1.on ul li:nth-child(2) {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .con1 ul li:nth-child(6) {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: 1.5s;
+  }
+  .con1.on ul li:nth-child(6) {
+    opacity: 1;
+    transform: translateX(0);
   }
   .con1 ul li:nth-child(2) h3,
   .con1 ul li:nth-child(6) h3 {
@@ -470,7 +602,7 @@
 
   .con1 > div > .line {
     width: 10px;
-    height: 100px;
+    height: 0px;
     background-image: radial-gradient(circle, #004236 1px, transparent 2px);
     background-size: 12px 12px;
     margin: 20px auto;
@@ -481,22 +613,42 @@
     font-family: "Abhaya Libre", serif;
     font-weight: 900;
     font-size: 40px;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: 1.2s;
   }
 
   .con1 > div h3 span {
     font-size: 23px;
     font-family: "Freesentation-9Black";
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: 1.5s;
   }
   .con1 > div p {
     text-align: center;
     margin-top: 30px;
     font-family: "Freesentation-4Regular";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-4Regular.woff2")
-      format("woff2");
-    font-weight: 400;
     font-style: normal;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: 1.8s;
   }
-
+  .con1.on > div > .line {
+    height: 100px;
+  }
+  .con1.on > div > h3 {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .con1.on > div > h3 span {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .con1.on > div > p {
+    opacity: 1;
+    transform: translateY(0);
+  }
   /* con2 */
   .con2 ul {
     display: flex;
@@ -512,15 +664,18 @@
     width: 70%;
     margin: 50px auto 10px;
     font-family: "Freesentation-9Black";
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1.3s;
   }
   .con2 ul li p {
     width: 70%;
     margin: 0px auto;
     font-family: "Freesentation-4Regular";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-4Regular.woff2")
-      format("woff2");
-    font-weight: 400;
     font-style: normal;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1.5s;
   }
 
   .con2 ul li:nth-child(1) img {
@@ -536,6 +691,9 @@
     font-size: 80px;
     margin-left: -150px;
     font-family: "Abhaya Libre", serif;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s;
   }
 
   .con2 ul li:nth-child(2) img {
@@ -544,6 +702,18 @@
     object-fit: cover;
     margin: 0px auto;
     display: block;
+  }
+  .con2.on ul li:nth-child(2) h3 {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .con2.on ul li h4 {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .con2.on ul li p {
+    opacity: 1;
+    transform: translateY(0);
   }
 
   /* 흐르는 텍스트 */
@@ -675,14 +845,27 @@
     font-size: 50px;
     font-family: "Abhaya Libre", serif;
     font-weight: 700;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.5s;
   }
   .title ul p {
     font-family: "Freesentation-9Black";
     text-align: center;
     font-size: 15px;
     line-height: 23px;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 1s;
   }
-
+  .title.on h2 {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .title.on p {
+    transform: translateY(0);
+    opacity: 1;
+  }
   .title img {
     width: 100%;
     height: 200px;
@@ -693,6 +876,7 @@
   .con1 {
     width: 100%;
     padding: 100px 0px;
+    overflow: hidden;
   }
   .con1 > h3 {
     font-size: 30px;
@@ -700,11 +884,15 @@
     font-family: "Abhaya Libre", serif;
     margin-bottom: 15px;
     color: var(--color);
+    transition: 1s;
+    transform: scale(0.8);
   }
   .con1 > h4 {
     text-align: center;
     font-family: "Abhaya Libre", serif;
     color: var(--color);
+    transition: 2.5s;
+    transform: scale(0.9);
   }
 
   .con1 ul {
@@ -717,7 +905,15 @@
     position: relative;
     margin-top: 50px;
   }
+  .con1.on > h3 {
+    opacity: 1;
+    transform: scale(1);
+  }
 
+  .con1.on > h4 {
+    opacity: 1;
+    transform: scale(1);
+  }
   .con1 ul h3,
   .con1 ul p {
     font-family: "Freesentation-9Black";
@@ -737,6 +933,24 @@
     border: 0.5px solid #004236;
     position: relative;
     z-index: 1;
+  }
+  .con1 ul li:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: 1.3s;
+  }
+  .con1.on ul li:nth-child(2) {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .con1 ul li:nth-child(6) {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: 1.5s;
+  }
+  .con1.on ul li:nth-child(6) {
+    opacity: 1;
+    transform: translateX(0);
   }
   .con1 ul li:nth-child(2) h3,
   .con1 ul li:nth-child(6) h3 {
@@ -779,7 +993,7 @@
 
   .con1 > div > .line {
     width: 10px;
-    height: 100px;
+    height: 0px;
     background-image: radial-gradient(circle, #004236 1px, transparent 2px);
     background-size: 12px 12px;
     margin: 20px auto;
@@ -790,23 +1004,42 @@
     font-family: "Abhaya Libre", serif;
     font-weight: 900;
     font-size: 30px;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: 1.2s;
   }
 
   .con1 > div h3 span {
     font-size: 16px;
     font-family: "Freesentation-9Black";
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: 1.5s;
   }
   .con1 > div p {
     text-align: center;
     margin-top: 30px;
     font-size: 14px;
     font-family: "Freesentation-4Regular";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-4Regular.woff2")
-      format("woff2");
-    font-weight: 400;
-    font-style: normal;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: 1.8s;
   }
-
+  .con1.on > div > .line {
+    height: 100px;
+  }
+  .con1.on > div > h3 {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .con1.on > div > h3 span {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .con1.on > div > p {
+    opacity: 1;
+    transform: translateY(0);
+  }
   /* con2 */
   .con2 ul {
     display: flex;
@@ -821,16 +1054,18 @@
     width: 70%;
     margin: 50px auto 10px;
     font-family: "Freesentation-9Black";
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1.3s;
   }
   .con2 ul li p {
     width: 70%;
     margin: 0px auto;
     font-size: 13px;
     font-family: "Freesentation-4Regular";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-4Regular.woff2")
-      format("woff2");
-    font-weight: 400;
-    font-style: normal;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1.5s;
   }
 
   .con2 ul li:nth-child(1) img {
@@ -847,6 +1082,9 @@
     font-size: 40px;
     margin-left: -150px;
     font-family: "Abhaya Libre", serif;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s;
   }
 
   .con2 ul li:nth-child(2) img {
@@ -856,7 +1094,18 @@
     margin: 0px auto;
     display: block;
   }
-
+  .con2.on ul li:nth-child(2) h3 {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .con2.on ul li h4 {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .con2.on ul li p {
+    opacity: 1;
+    transform: translateY(0);
+  }
   /* 흐르는 텍스트 */
 
   .marquee-container {
@@ -980,12 +1229,18 @@
     font-size: 50px;
     font-family: "Abhaya Libre", serif;
     font-weight: 700;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.5s;
   }
   .title ul p {
     font-family: "Freesentation-9Black";
     text-align: center;
     font-size: 15px;
     line-height: 23px;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 1s;
   }
 
   .title img {
@@ -993,11 +1248,19 @@
     height: 200px;
     object-fit: cover;
   }
-
+  .title.on h2 {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .title.on p {
+    transform: translateY(0);
+    opacity: 1;
+  }
   /* con1 */
   .con1 {
     width: 100%;
     padding: 100px 0px;
+    overflow: hidden;
   }
   .con1 > h3 {
     font-size: 30px;
@@ -1005,13 +1268,25 @@
     font-family: "Abhaya Libre", serif;
     margin-bottom: 15px;
     color: var(--color);
+    transition: 1s;
+    transform: scale(0.8);
   }
   .con1 > h4 {
     text-align: center;
     font-family: "Abhaya Libre", serif;
     color: var(--color);
+    transition: 2.5s;
+    transform: scale(0.9);
+  }
+  .con1.on > h3 {
+    opacity: 1;
+    transform: scale(1);
   }
 
+  .con1.on > h4 {
+    opacity: 1;
+    transform: scale(1);
+  }
   .con1 ul {
     width: 100%;
     display: flex;
@@ -1042,6 +1317,24 @@
     border: 0.5px solid #004236;
     position: relative;
     z-index: 1;
+  }
+  .con1 ul li:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: 1.3s;
+  }
+  .con1.on ul li:nth-child(2) {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .con1 ul li:nth-child(6) {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: 1.5s;
+  }
+  .con1.on ul li:nth-child(6) {
+    opacity: 1;
+    transform: translateX(0);
   }
   .con1 ul li:nth-child(2) h3,
   .con1 ul li:nth-child(6) h3 {
@@ -1084,7 +1377,7 @@
 
   .con1 > div > .line {
     width: 10px;
-    height: 100px;
+    height: 0px;
     background-image: radial-gradient(circle, #004236 1px, transparent 2px);
     background-size: 12px 12px;
     margin: 20px auto;
@@ -1095,23 +1388,42 @@
     font-family: "Abhaya Libre", serif;
     font-weight: 900;
     font-size: 30px;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: 1.2s;
   }
 
   .con1 > div h3 span {
     font-size: 16px;
     font-family: "Freesentation-9Black";
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: 1.5s;
   }
   .con1 > div p {
     text-align: center;
     margin-top: 30px;
     font-size: 14px;
     font-family: "Freesentation-4Regular";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-4Regular.woff2")
-      format("woff2");
-    font-weight: 400;
-    font-style: normal;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: 1.8s;
   }
-
+  .con1.on > div > .line {
+    height: 80px;
+  }
+  .con1.on > div > h3 {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .con1.on > div > h3 span {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .con1.on > div > p {
+    opacity: 1;
+    transform: translateY(0);
+  }
   /* con2 */
   .con2 ul {
     display: flex;
@@ -1126,16 +1438,18 @@
     width: 70%;
     margin: 50px auto 10px;
     font-family: "Freesentation-9Black";
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1.3s;
   }
   .con2 ul li p {
     width: 70%;
     margin: 0px auto;
     font-size: 13px;
     font-family: "Freesentation-4Regular";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-4Regular.woff2")
-      format("woff2");
-    font-weight: 400;
-    font-style: normal;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1.5s;
   }
 
   .con2 ul li:nth-child(1) img {
@@ -1152,6 +1466,9 @@
     font-size: 40px;
     margin-left: -150px;
     font-family: "Abhaya Libre", serif;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s;
   }
 
   .con2 ul li:nth-child(2) img {
@@ -1161,7 +1478,18 @@
     margin: 0px auto;
     display: block;
   }
-
+  .con2.on ul li:nth-child(2) h3 {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .con2.on ul li h4 {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .con2.on ul li p {
+    opacity: 1;
+    transform: translateY(0);
+  }
   /* 흐르는 텍스트 */
 
   .marquee-container {

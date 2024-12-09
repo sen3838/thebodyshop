@@ -18,16 +18,35 @@ $(function () {
     .to(txt, { opacity: "1", duration: "10" })
     .to(upbox, { scale: "0.5", duration: "10", opacity: "1" });
 
+  // 헤더 메뉴
+  $("header .bar").on("click", function () {
+    $("header .menu_wrap,header .menu_wrap > ul")
+      .stop()
+      .animate({ right: "0" });
+  });
+
+  $("header .close").on("click", function () {
+    $("header .menu_wrap,header .menu_wrap > ul")
+      .stop()
+      .animate({ right: "-100%" });
+  });
+
+  let visual = $(".visual").offset().top;
+  console.log(visual);
   let con1 = $(".con1").offset().top + 600;
   let con2 = $(".con2").offset().top + 800;
   let con2c2 = $(".con2 .c2").offset().top + 600;
   let con3 = $(".con3").offset().top + 800;
   let con4 = $(".con4").offset().top + 600;
-  console.log(con1);
+  // console.log(con1);
 
   $(window).on("scroll", function () {
     let scroll = $(this).scrollTop();
     // console.log(scroll);
+    $("header").addClass("on");
+    if (scroll <= visual) {
+      $("header").removeClass("on");
+    }
     if (scroll >= con1) {
       $(".con1").addClass("on");
       $(".con1 h3").addClass("on");
