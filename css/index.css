@@ -1236,8 +1236,11 @@
 
 @media (min-width: 481px) and (max-width: 699px) {
   /* 헤더  */
-
   header {
+    width: 100%;
+  }
+
+  header .mobile {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -1249,26 +1252,79 @@
     top: 0;
     z-index: 5;
   }
-  header h1 {
+  header .mobile h1 {
     width: 70px;
     height: 70px;
   }
-  header h1 img {
+  header .mobile h1 img {
     width: 100%;
     height: 100%;
   }
 
-  header ul {
+  header .mobile ul {
     display: flex;
     align-items: center;
     font-size: 30px;
     gap: 20px;
   }
 
+  header .menu_wrap {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  header .menu_wrap > ul {
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0px;
+    box-sizing: border-box;
+    font-family: "Freesentation-9Black";
+    color: var(--color);
+    position: absolute;
+    top: 0;
+    right: -100%;
+    z-index: 11;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  header .menu_wrap > ul > li > a {
+    font-size: 23px;
+  }
+
+  header .menu_wrap .sub_menu {
+    font-size: 15px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    font-family: "Freesentation-8ExtraBold";
+  }
+
+  header .menu_wrap .close {
+    position: absolute;
+    z-index: 11;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    padding: 25px;
+    color: var(--color);
+  }
+  header .menu_wrap .sub_menu li:hover {
+    text-decoration: underline;
+  }
+
   header .pc {
     display: none;
   }
 
+  header.on .mobile {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: rgba(111, 115, 119, 0.2) 0px 8px 24px;
+  }
   /* 비쥬얼 */
   .visual {
     width: 100%;
@@ -1789,6 +1845,10 @@
   /* 헤더  */
   header {
     width: 100%;
+  }
+
+  header .mobile {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1798,28 +1858,80 @@
     position: fixed;
     top: 0;
     z-index: 5;
-    background-color: #fff;
   }
-  header h1 {
-    width: 50px;
-    height: 50px;
+  header .mobile h1 {
+    width: 70px;
+    height: 70px;
   }
-  header h1 img {
+  header .mobile h1 img {
     width: 100%;
     height: 100%;
   }
 
-  header ul {
+  header .mobile ul {
     display: flex;
     align-items: center;
-    font-size: 25px;
+    font-size: 30px;
     gap: 20px;
+  }
+
+  header .menu_wrap {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  header .menu_wrap > ul {
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0px;
+    box-sizing: border-box;
+    font-family: "Freesentation-9Black";
+    color: var(--color);
+    position: absolute;
+    top: 0;
+    right: -100%;
+    z-index: 11;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  header .menu_wrap > ul > li > a {
+    font-size: 23px;
+  }
+
+  header .menu_wrap .sub_menu {
+    font-size: 15px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    font-family: "Freesentation-8ExtraBold";
+  }
+
+  header .menu_wrap .close {
+    position: absolute;
+    z-index: 11;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    padding: 25px;
+    color: var(--color);
+  }
+  header .menu_wrap .sub_menu li:hover {
+    text-decoration: underline;
   }
 
   header .pc {
     display: none;
   }
 
+  header.on .mobile {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: rgba(111, 115, 119, 0.2) 0px 8px 24px;
+  }
   /* 비쥬얼 */
 
   .visual {
