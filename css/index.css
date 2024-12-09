@@ -1848,6 +1848,7 @@
   /* 헤더  */
   header {
     width: 100%;
+    overflow: hidden;
   }
 
   header .mobile {
@@ -1861,6 +1862,7 @@
     position: fixed;
     top: 0;
     z-index: 5;
+    overflow: hidden;
   }
   header .mobile h1 {
     width: 70px;
@@ -1876,6 +1878,7 @@
     align-items: center;
     font-size: 30px;
     gap: 20px;
+    overflow: hidden;
   }
 
   header .menu_wrap {
@@ -1901,6 +1904,7 @@
     z-index: 11;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.8);
+    overflow: hidden;
   }
   header .menu_wrap > ul > li {
     height: calc(100% / 5);
@@ -1914,6 +1918,7 @@
     line-height: 25px;
     margin-bottom: 10px;
     font-family: "Freesentation-8ExtraBold";
+    overflow: hidden;
   }
 
   header .menu_wrap .close {
@@ -1924,6 +1929,7 @@
     font-size: 30px;
     padding: 25px;
     color: var(--color);
+    overflow: hidden;
   }
   header .menu_wrap .sub_menu li:hover {
     text-decoration: underline;
