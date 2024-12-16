@@ -668,6 +668,7 @@
     opacity: 0;
     transition: 2.5s;
     overflow: hidden;
+    color: var(--color);
   }
   .con1 .con1_right img {
     width: 100%;
@@ -741,13 +742,14 @@
     opacity: 0;
     transform: translateY(100px);
     transition: 1s;
+    color: var(--color);
   }
   .con2 > ul > li > p {
     font-size: 15px;
     text-align: center;
     font-family: "Freesentation-9Black";
     font-weight: 600;
-
+    color: var(--color);
     opacity: 0;
     transform: translateY(100px);
     transition: 1.5s;
@@ -1119,6 +1121,7 @@
     opacity: 0;
     transition: 2.5s;
     overflow: hidden;
+    color: var(--color);
   }
   .con1 .con1_right img {
     width: 100%;
@@ -1187,13 +1190,13 @@
 
   .con2 > ul > li > h3 {
     font-size: 30px;
-
     text-align: center;
     font-family: "Abhaya Libre", serif;
     font-weight: 600;
     opacity: 0;
     transform: translateY(100px);
     transition: 1s;
+    color: var(--color);
   }
   .con2 > ul > li > p {
     text-align: center;
@@ -1204,6 +1207,7 @@
     opacity: 0;
     transform: translateY(100px);
     transition: 1.5s;
+    color: var(--color);
   }
   .con2 .con2_right {
     width: 100%;
@@ -1570,6 +1574,7 @@
     opacity: 0;
     transition: 2.5s;
     overflow: hidden;
+    color: var(--color);
   }
   .con1 .con1_right img {
     width: 100%;
@@ -1643,6 +1648,7 @@
     opacity: 0;
     transform: translateY(100px);
     transition: 1s;
+    color: var(--color);
   }
   .con2 > ul > li > p {
     text-align: center;
@@ -1653,6 +1659,7 @@
     opacity: 0;
     transform: translateY(100px);
     transition: 1.5s;
+    color: var(--color);
   }
   .con2 .con2_right {
     width: 100%;
