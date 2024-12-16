@@ -201,6 +201,7 @@
     opacity: 0;
     transition: 2.5s;
     overflow: hidden;
+    color: var(--color);
   }
   .con1 .con1_right img {
     width: 250px;
@@ -281,6 +282,7 @@
     opacity: 0;
     transform: translateY(100px);
     transition: 1s;
+    color: var(--color);
   }
   .con2 > ul > li > p {
     width: 500px;
@@ -291,6 +293,7 @@
     opacity: 0;
     transform: translateY(100px);
     transition: 1.5s;
+    color: var(--color);
   }
   .con2 .con2_right {
     display: flex;
